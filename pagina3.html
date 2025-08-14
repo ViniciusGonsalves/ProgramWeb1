@@ -12,13 +12,18 @@
         <a href="pagina2.html">Pagina 2</a>
     </p>
     <p>
-        <form action="#" method="get">
+        <form action="#" method="post">
             <label for="Login">Login:</label>
-            <input type="text" name="Login" id="Login"><br>
+            <input type="text" name="Login" id="Login" minlength="3" maxlength="15"><br>
             <label for="">Senha: </label>
-            <input type="password" name="Senha" id="Senha">
+            <input type="password" name="Senha" id="Senha" minlength="3" maxlength="15" required>
+           <br> <input type="c" name="Endereço" id="Endereço:" placeholder="Digite seu Endereço:" size="60">
+           <br> <input type="text" name="campo1" id="campo1" readonly value="Informação">
+           <br> <input type="text" name="campo2" id="campo2" readonly value="Info2" disabled>
 
-            <br><input type="submit" value="Enviar">
+            <br><input type="submit" value="Enviar">    
+            <input type="reset" value="Limpar">
+            
         </form>
     </p>
     
